@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap.min.css"
+    />
+    <title>Doğa</title>
+
+    <style>
+      body {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background: url('https://images.unsplash.com/photo-1631771970653-606b87601cdb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHNpbXBsZSUyMG5hdHVyZXxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80');
+        background-size: cover;
+        background-position: center;
+      }
+
+      .container {
+        padding: 40px;
+        /* From https://css.glass */
+        background: rgba(255, 255, 255, 0.21);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(6.8px);
+        -webkit-backdrop-filter: blur(6.8px);
+        border: 1px solid rgba(255, 255, 255, 0.81);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- header alanı -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">Doğa</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/"
+                >Anasayfa</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/galeri.html">Galeri</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/login.html">Giriş Yap</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="aranacak kelime...."
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Ara
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ana içerik -->
+    <div class="container" style="max-width: 500px">
+      <!-- logo -->
+      <div class="d-flex justify-content-center">
+        <img
+          style="width: 150px"
+          src="https://s3u.tmimgcdn.com/u37752224/4ce4561a0be2d824a2f4bd92d24da7f9.gif"
+        />
+      </div>
+      <!-- form -->
+      <form>
+        <div>
+          <label class="form-label">Email</label>
+          <input class="form-control shadow" type="text" />
+        </div>
+
+        <div class="mt-4">
+          <label class="form-label">Şifreniz</label>
+          <input class="form-control shadow" type="password" />
+        </div>
+
+        <div class="mt-4 form-check">
+          <input type="checkbox" class="form-check-input shadow" />
+          <label class="form-check-label">Beni Hatırla</label>
+        </div>
+
+        <div class="d-flex justify-content-end">
+          <button class="btn btn-primary shadow">Kaydol</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- footer -->
+    <footer class="text-center">Tüm Hakları Saklıdır 2022</footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/js/bootstrap.min.js"></script>
+  </body>
+</html>
